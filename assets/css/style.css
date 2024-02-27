@@ -1,4 +1,8 @@
-/* -- GENERAL -- */
+/* || GENERAL || */
+
+:root {
+    --margin: 20px 50px 20px 50px;
+}
 
 * {
     box-sizing: border-box;
@@ -10,7 +14,7 @@ body {
     background-color: #ededf7;
 }
 
-/* -- HEADER -- */
+/* || HEADER || */
 
 header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -51,7 +55,7 @@ header nav ul li a {
     text-underline-offset: 8px;
 }
 
-/* -- FIGURE -- */
+/* || FIGURE || */
 
 figure {
     background-color: #1f3d61;
@@ -70,7 +74,7 @@ figure h3 {
     color: #31343d;
 }
 
-/* -- MAIN -- */
+/* || MAIN || */
 
 .main {
     width: 95%;
@@ -78,10 +82,14 @@ figure h3 {
     margin-left: 20px;
 }
 
-/* -- SECTIONS -- */
+/* || SECTIONS || */
 
+/* | ABOUT ME | */
 #about-me {
-    margin: 20px 50px 20px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: var(--margin);
 }
 
 .section-titles {
@@ -94,18 +102,27 @@ figure h3 {
 #about-me p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 18px;
+    margin-left: 50px;
+    padding-left: 25px;
+    border-left: 5px solid #31343d;
 }
 
+/* | WORK | */
 #work {
-    margin: 20px 50px 20px 50px;
+    margin: var(--margin);
 }
 
+/* | RESUME | */
 #resume {
-    margin: 20px 50px 20px 50px;
+    margin: var(--margin);
 }
 
+/* | CONTACT ME | */
 #contact-me {
-    margin: 20px 50px 20px 50px;
+    margin: var(--margin);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 #contact-me div {
@@ -117,11 +134,13 @@ figure h3 {
 
 #contact-me div ul {
     list-style-type: none;
+    margin-left: 25px;
+    border-left: 5px solid #31343d;
 }
 
 #contact-me div ul li {
     display: inline-block;
-    margin-left: 75px;
+    margin-left: 50px;
 }
 
 #contact-me div ul li a {
