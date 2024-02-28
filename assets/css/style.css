@@ -1,15 +1,13 @@
 /* || GENERAL || */
 
 :root {
-    --margin: 20px 50px 20px 50px;
-    --aqua: #00C9DD;
+    --aqua: #17c4d4;
     --blue: #0367A6;
     --dark-blue: #000132;
     --charcoal: #31343d;
 }
 
 * {
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -59,6 +57,10 @@ header nav ul li a {
     text-underline-offset: 8px;
 }
 
+header nav ul li a:hover {
+    filter: brightness(150%);
+}
+
 /* || FIGURE || */
 
 figure img {
@@ -91,7 +93,7 @@ figure h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: var(--margin);
+    margin: 20px 50px 20px 50px;
 }
 
 .section-titles {
@@ -112,19 +114,33 @@ figure h3 {
 
 /* | WORK | */
 #work {
-    margin: var(--margin);
+    margin: 20px 50px 20px 50px;
     display: flex;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 25px;
+    padding-left: 10px;
     border-left: 5px solid var(--dark-blue);
 }
 
+.row div {
+    position: relative;
+    text-align: center;
+}
+
+.row div p {
+    color: var(--dark-blue);
+    background-color: var(--aqua);
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
 .column {
-    
+    color: var(--dark-blue);
+    margin: 10px;
 }
 
 #image-1 {
@@ -152,14 +168,17 @@ figure h3 {
     height: auto;
 }
 
-/* | RESUME | */
-#resume {
-    margin: var(--margin);
+.work-images {
+    opacity: .75;
+}
+
+.work-images:hover {
+    opacity: 1;
 }
 
 /* | CONTACT ME | */
 #contact-me {
-    margin: var(--margin);
+    margin: 20px 50px 20px 50px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -187,4 +206,8 @@ figure h3 {
     text-decoration: underline;
     text-decoration-thickness: 2px;
     text-underline-offset: 5px;
+}
+
+#contact-me div ul li a:hover {
+    color: var(--blue);
 }
