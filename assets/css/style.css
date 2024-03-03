@@ -63,27 +63,44 @@ header nav ul li a:hover {
 
 /* || FIGURE || */
 
-figure img {
+#img {
+    margin: 10px;
+    flex: 0 0 35%;
+    position: relative;
+    text-align: center;
+}
+
+#img img {
     height: 200px;
     width: 100%;
 }
 
-figure h3 {
-    position: absolute;
-    top: 230px; 
-    left: 84%; 
-    background-color: var(--aqua);
+#img h2 {
     color: var(--dark-blue);
-    padding: 10px 20px; 
-    font-size: 20px; 
+    background-color: var(--aqua);
+    position: absolute;
+    font-size: 24px;
+    padding: 2px;
+    bottom: 16px;
+    right: 16px; 
 }
 
 /* || MAIN || */
 
 .main {
-    width: 95%;
-    display: inline-block;
-    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.section-titles {
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 36px;
+    margin-right: 50px;
+    color: var(--blue);
+    align-items: center;
 }
 
 /* || SECTIONS || */
@@ -94,15 +111,6 @@ figure h3 {
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 20px 50px 20px 50px;
-}
-
-.section-titles {
-    display: flex;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 36px;
-    margin-right: 50px;
-    color: var(--blue);
-    align-items: center;
 }
 
 #about-me p {
@@ -125,54 +133,31 @@ figure h3 {
     border-left: 5px solid var(--dark-blue);
 }
 
-.row div {
+.column {
+    margin: 10px;
+    flex: 0 0 47%;
     position: relative;
     text-align: center;
+    background-color: var(--blue);
 }
 
-.row div p {
+.column p {
     color: var(--dark-blue);
     background-color: var(--aqua);
     position: absolute;
-    bottom: 8px;
+    padding: 2px;
+    bottom: 16px;
     right: 16px;
 }
 
-.column {
-    color: var(--dark-blue);
-    margin: 10px;
-}
-
-#image-1 {
-    width: 70%;
+.images {
+    border: 5px solid var(--blue);
+    width: 100%;
     height: auto;
-}
-
-#image-2 {
-    width: 30%;
-    height: auto;
-}
-
-#image-3 {
-    width: 30%;
-    height: auto;
-}
-
-#image-4 {
-    width: 30%;
-    height: auto;
-}
-
-#image-5 {
-    width: 30%;
-    height: auto;
-}
-
-.work-images {
     opacity: .75;
 }
 
-.work-images:hover {
+.images:hover {
     opacity: 1;
 }
 

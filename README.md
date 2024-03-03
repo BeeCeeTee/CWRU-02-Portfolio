@@ -1,1 +1,21 @@
-README
+# Portfolio
+
+## I. Description
+This portfolio was created to showcase some of the work I've done, both up to this point and throughout the course. It was created with the intent of mimicking the example page as closely as possible in structure and appearance, with the exception of some small aesthetic changes. By doing so, I have proven to myself and, hopefully, the instructor/graders that I can take an image of a fully-designed webpage and build it into a functioning static site.
+
+## II. Usage
+To use, simply click the link below or enter the following URL into the address bar:
+
+## III. Credits
+This project was completed by Brendan Trepal using the starter code provided via Bootcamp Spot.
+
+Photo credits:
+    -Codioful on Unsplash
+    -Christopher Gower on Unsplash
+    -Luca Bravo on Unsplash
+    -Markus Spiske on Unsplash
+    -Lorenzo Herrera on Unsplash
+    -Sandro Katalina on Unsplash
+
+All photos from Unsplash.com used under a free, commercial/non-commercial license.
+
