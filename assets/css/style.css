@@ -80,14 +80,24 @@ header nav ul li a:hover {
 }
 
 /* Create & position subtitle block */
-#img h2 {
+.header-label {
     color: var(--dark-blue);
     background-color: var(--aqua);
     position: absolute;
     font-size: 2vw;
     padding: 1%;
-    bottom: 10%;
-    right: 1%; 
+    bottom: 5%;
+    right: 1%;
+}
+
+.labels {
+    color: var(--dark-blue);
+    background-color: var(--aqua);
+    position: absolute;
+    font-size: 1.5vw;
+    padding: 1%;
+    bottom: 5%;
+    right: 1%;
 }
 
 /* || MAIN || */
@@ -96,6 +106,8 @@ header nav ul li a:hover {
 .main {
     margin: 1%;
     padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Set up side titles for each section */
@@ -109,29 +121,29 @@ header nav ul li a:hover {
     text-align: center;
 }
 
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 /* || SECTIONS || */
 
 /* | ABOUT ME | */
-#about-me {
-    display: flex;
-}
 
 /* Size and style paragraph */
-#about-me p {
+.section-content {
     font-size: 2vw;
     padding-left: 3%;
     padding-right: 2%;
     margin-top: 1%;
     margin-bottom: 1%;
-    width: 100%;
+    width: 80%;
     line-height: 1.6;
     border-left: .75vw solid var(--dark-blue);
 }
 
 /* | WORK | */
-#work {
-    display: flex;
-}
 
 /* Align images into grid form */
 .row {
@@ -142,67 +154,64 @@ header nav ul li a:hover {
     padding-right: 2%;
     margin-top: 1%;
     margin-bottom: 1%;
-    border-left: .75vw solid var(--dark-blue);
 }
 
 /* Align image grid columns and create bluish tint */
-.column {
+.column-full {
+    width: 100%;
+    height: 25vw;
     margin: 1%;
-    flex: 0 0 48%;
     position: relative;
-    background-color: var(--blue);
+    border: 5px solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .75;
+    background-color: #d3d3da;
 }
 
-/* Create and align image subtitles */
-.column p {
-    color: var(--dark-blue);
-    background-color: var(--aqua);
-    position: absolute;
-    font-size: 1.5vw;
-    padding: 1%;
-    bottom: 5%;
-    right: 4%;
+.column-half {
+    width: 48%;
+    height: 20vw;
+    margin: 1%;
+    position: relative;
+    border: 5px solid var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .75;
+    background-color: #d3d3da;
+}
+
+.column-full:hover {
+    opacity: 1;
+}
+
+.column-half:hover {
+    opacity: 1;
 }
 
 /* Set default image */
 .images {
-    border: 5px solid var(--blue);
     width: 100%;
-    height: auto;
-    opacity: .75;
-}
-
-/* Create image hover effect */
-.images:hover {
-    opacity: 1;
+    height: 90%;
 }
 
 /* | CONTACT ME | */
-#contact-me {
-    display: flex;
-}
-
-/* Set up Contact Me container */
-#contact-me div {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 1%;
-    font-size: 2vw;
-    border-left: .75vw solid var(--dark-blue);
-}
 
 /* Arrange contact items */
-#contact-me div ul {
+.contact-me {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     padding-left: 3%;
     padding-right: 2%;
     list-style-type: none;
 }
 
 /* Style contact links */
-#contact-me a {
+.contact-me a {
     color: var(--dark-blue);
     text-decoration: underline;
     text-decoration-thickness: 10%;
@@ -210,6 +219,6 @@ header nav ul li a:hover {
 }
 
 /* Create link hover effect */
-#contact-me a:hover {
+.contact-me a:hover {
     color: var(--blue);
 }

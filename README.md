@@ -11,11 +11,6 @@ This project was completed by Brendan Trepal using the starter code provided via
 
 Photo credits:
     -Codioful on Unsplash
-    -Christopher Gower on Unsplash
-    -Luca Bravo on Unsplash
-    -Markus Spiske on Unsplash
-    -Lorenzo Herrera on Unsplash
-    -Sandro Katalina on Unsplash
 
 All photos from Unsplash.com used under a free, commercial/non-commercial license.
 
